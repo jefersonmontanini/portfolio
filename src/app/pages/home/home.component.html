@@ -1,0 +1,27 @@
+<app-header></app-header>
+<div class="row">
+    <app-carousel *ngIf="mainCarousel" [config]="mainCarousel.config" [items]="mainCarousel.items"></app-carousel>
+</div>
+<div align="center">
+    <a href="portfolio" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">veja mais</a>
+</div>
+<div class="row">
+    <app-cards *ngIf="cards" [items]="cards.items"></app-cards>
+</div>
+<!-- <div class="carousel">
+    <app-carousel class="carousel" *ngIf="secondaryCarouseul" [config]="secondaryCarouseul.config" [items]="mainCarousel.items"></app-carousel>
+</div> -->
+<section class="row">
+    <div class="aboutMe">
+        <h1 align="center" >UM POUCO SOBRE MIM</h1>
+        <div class="row box d-flex align-items-center" >
+                <div class="col-6 mx-auto text-center">
+                    <img src="./../../../assets/sobremim.jpg" />
+                </div>
+                <div class="col-6">
+                    <h2 class="color-bege">Muito Prazer</h2>
+                    <p class="color-bege">Lorem ipsum dollor Lorem ipsum dollor Lorem ipsum dollor Lorem ipsum dollor Lorem ipsum dollor Lorem ipsum dollor Lorem ipsum dollor Lorem ipsum dollor Lorem ipsum dollor Lorem ipsum dollor Lorem ipsum dollor Lorem ipsum dollor</p>
+                </div>
+        </div>
+    </div>
+</section>
